@@ -1,163 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delta Chat + Яндекс.Почта — быстрый старт</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Delta Chat + Яндекс — инструкция</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="bg"></div>
-  <header class="hero wrap">
-    <div class="hero-copy">
-      <div class="eyebrow">Одностраничная инструкция</div>
-      <h1>Как настроить <span>Delta Chat</span> с <span>Яндекс.Почтой</span></h1>
-      <p class="lead">Короткий гайд для быстрого запуска: отдельный ящик, IMAP, пароль приложения и ручной вход в Delta Chat.</p>
-      <div class="hero-actions">
-        <a href="#steps" class="btn btn-primary">Перейти к шагам</a>
-        <a href="#settings" class="btn btn-secondary">Параметры IMAP/SMTP</a>
-      </div>
-      <ul class="chips">
-        <li>Без собственного сервера</li>
-        <li>Сообщения поверх email</li>
-        <li>Шифрование OpenPGP</li>
-      </ul>
-    </div>
-    <div class="hero-visual card">
-      <img src="assets/delta-flow.jpg" alt="Первые шаги входа в Delta Chat" />
-    </div>
-  </header>
 
-  <main>
-    <section class="wrap intro-grid">
-      <article class="warning card accent">
-        <div class="section-tag">Важно перед началом</div>
-        <h2>Создайте отдельный аккаунт Яндекса</h2>
-        <p>Для Delta Chat лучше завести <strong>отдельный почтовый ящик</strong>, а не использовать основной личный или рабочий аккаунт. Это упростит безопасность и изолирует переписку.</p>
-        <ul>
-          <li>Создайте новый адрес на Яндексе специально под Delta Chat.</li>
-          <li>Не используйте основной пароль от аккаунта в приложении.</li>
-          <li>Для подключения понадобится <strong>пароль приложения</strong>.</li>
-        </ul>
-      </article>
+<div class="container">
+  <h1>Delta Chat + Яндекс</h1>
+  <p class="subtitle">Быстрая настройка мессенджера поверх email</p>
 
-      <article class="mini card">
-        <div class="section-tag">Как это работает</div>
-        <h3>Delta Chat — это мессенджер поверх почты</h3>
-        <p>Приложение использует обычные почтовые протоколы. В Яндекс.Почте сообщения будут выглядеть как служебные письма или PGP-содержимое.</p>
-      </article>
-    </section>
+  <section>
+    <h2>Важно</h2>
+    <p>Создайте отдельный аккаунт Яндекс.Почты для безопасности.</p>
+  </section>
 
-    <section id="steps" class="wrap steps">
-      <div class="section-head">
-        <div class="section-tag">Пошаговая настройка</div>
-        <h2>4 шага до рабочего Delta Chat</h2>
-      </div>
+  <section>
+    <h2>1. Включите IMAP</h2>
+    <img src="assets/imap.png" class="big-img">
+  </section>
 
-      <article class="step card">
-        <div class="step-copy">
-          <div class="step-num">1</div>
-          <h3>Включите IMAP в Яндекс.Почте</h3>
-          <p>В браузере откройте Яндекс.Почту, затем: <strong>⚙️ → Все настройки → Почтовые программы</strong>. Включите доступ по <strong>IMAP</strong> и пункт <strong>«Пароли приложений и OAuth-токены»</strong>, затем сохраните изменения.</p>
-        </div>
-        <div class="step-gallery three">
-          <img src="assets/yandex-settings-gear.png" alt="Переход в настройки Яндекс Почты" />
-          <img src="assets/yandex-mail-programs-menu.png" alt="Раздел Почтовые программы" />
-          <img src="assets/yandex-imap.png" alt="Включение IMAP в Яндекс Почте" />
-        </div>
-      </article>
+  <section>
+    <h2>2. Пароль приложения</h2>
+    <img src="assets/password.png" class="big-img">
+  </section>
 
-      <article class="step card">
-        <div class="step-copy">
-          <div class="step-num">2</div>
-          <h3>Создайте пароль приложения</h3>
-          <p>Откройте <strong>Яндекс ID → Безопасность → Пароли приложений</strong>, выберите <strong>Почта</strong>, задайте имя вроде <strong>Delta Chat</strong> и сохраните выданный пароль. Он показывается только один раз.</p>
-          <p class="tip">Обычный пароль от Яндекса здесь не подходит.</p>
-        </div>
-        <div class="step-gallery four">
-          <img src="assets/yandex-security.png" alt="Раздел Безопасность в Яндекс ID" />
-          <img src="assets/yandex-app-passwords.png" alt="Страница паролей приложений" />
-          <img src="assets/yandex-password-name.png" alt="Задание имени пароля приложения" />
-          <img src="assets/yandex-password-generated.png" alt="Сгенерированный пароль приложения" />
-        </div>
-      </article>
+  <section>
+    <h2>3. Вход в Delta Chat</h2>
+    <img src="assets/login.png" class="big-img">
+  </section>
 
-      <article class="step card step-reverse">
-        <div class="step-copy">
-          <div class="step-num">3</div>
-          <h3>Войдите в Delta Chat вручную</h3>
-          <p>В приложении нажмите <strong>Создать новый профиль → Использовать другой сервер → Вход в обычную электронную почту → + Дополнительные параметры</strong>.</p>
-          <p>Если Delta Chat предлагает упрощённую настройку через OAuth, в этой схеме её лучше <strong>отменить</strong> и ввести параметры вручную.</p>
-        </div>
-        <div class="step-gallery single">
-          <img src="assets/delta-flow.jpg" alt="Сценарий входа в Delta Chat" />
-        </div>
-      </article>
+  <section>
+    <h2>4. Настройки серверов</h2>
+    <img src="assets/settings.png" class="big-img">
+  </section>
 
-      <article class="step card">
-        <div class="step-copy">
-          <div class="step-num">4</div>
-          <h3>Проверьте, что всё заработало</h3>
-          <p>Отправьте тестовое сообщение. В Яндекс.Почте оно будет видно не как обычный чат, а как служебное письмо / PGP-содержимое. Это нормально и означает, что связка работает.</p>
-        </div>
-        <div class="step-check card inset">
-          <div class="checkline">✅ Delta Chat подключается к ящику</div>
-          <div class="checkline">✅ Сообщения уходят и приходят</div>
-          <div class="checkline">✅ В почте видны зашифрованные данные</div>
-        </div>
-      </article>
-    </section>
+  <section>
+    <h2>5. Проверка</h2>
+    <img src="assets/check.png" class="big-img">
+  </section>
 
-    <section id="settings" class="wrap settings-block">
-      <div class="section-head">
-        <div class="section-tag">Готовые параметры</div>
-        <h2>Что вводить в ручной настройке</h2>
-      </div>
+</div>
 
-      <div class="settings-grid">
-        <article class="card config">
-          <h3>Учётные данные</h3>
-          <dl>
-            <div><dt>Email</dt><dd>полный адрес Яндекс.Почты</dd></div>
-            <div><dt>Пароль</dt><dd>пароль приложения, а не основной пароль аккаунта</dd></div>
-          </dl>
-        </article>
-
-        <article class="card config">
-          <h3>Входящие (IMAP)</h3>
-          <dl>
-            <div><dt>Сервер</dt><dd><code>imap.yandex.ru</code></dd></div>
-            <div><dt>Порт</dt><dd><code>993</code></dd></div>
-            <div><dt>Защита</dt><dd><code>SSL/TLS</code></dd></div>
-            <div><dt>Логин</dt><dd>часть адреса до <code>@</code></dd></div>
-          </dl>
-        </article>
-
-        <article class="card config">
-          <h3>Исходящие (SMTP)</h3>
-          <dl>
-            <div><dt>Сервер</dt><dd><code>smtp.yandex.ru</code></dd></div>
-            <div><dt>Порт</dt><dd><code>465</code></dd></div>
-            <div><dt>Защита</dt><dd><code>SSL/TLS</code></dd></div>
-            <div><dt>Пароль</dt><dd>тот же пароль приложения</dd></div>
-          </dl>
-        </article>
-      </div>
-    </section>
-
-    <section class="wrap final-note">
-      <article class="card accent soft">
-        <h2>Итог</h2>
-        <p>Вы получаете мессенджер с интерфейсом чата, который работает через email-инфраструктуру Яндекса и использует шифрование OpenPGP. Для быстрого развёртывания этого достаточно.</p>
-      </article>
-    </section>
-  </main>
-
-  <footer class="wrap footer">
-    <p>Материалы и скриншоты собраны на основе статьи Teletype и инструкции на Хабре.</p>
-  </footer>
 </body>
 </html>
